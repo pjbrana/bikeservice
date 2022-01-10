@@ -1,0 +1,19 @@
+{
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "ts"
+  ],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "@bike/env-config/(.*)": "<rootDir>/../libs/env-config/src/$1",
+    "@bike/env-config": "<rootDir>/../libs/env-config/src",
+    "@bike/auth/(.*)": "<rootDir>/../libs/auth/src/$1",
+    "@bike/auth": "<rootDir>/../libs/auth/src"
+  }
+}

@@ -1,0 +1,1 @@
+export const BIKE_BILL_PIC_UPLOAD_FOLDER = './uploads';

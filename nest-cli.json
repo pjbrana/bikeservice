@@ -1,0 +1,31 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "projects": {
+    "env-config": {
+      "type": "library",
+      "root": "libs/env-config",
+      "entryFile": "index",
+      "sourceRoot": "libs/env-config/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/env-config/tsconfig.lib.json"
+      }
+    },
+    "auth": {
+      "type": "library",
+      "root": "libs/auth",
+      "entryFile": "index",
+      "sourceRoot": "libs/auth/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/auth/tsconfig.lib.json"
+      }
+    }
+  },
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "plugins": [
+      "@nestjs/swagger/plugin"
+    ]
+  }
+}

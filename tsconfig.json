@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "paths": {
+      "@bike/env-config": [
+        "libs/env-config/src"
+      ],
+      "@bike/env-config/*": [
+        "libs/env-config/src/*"
+      ],
+      "@bike/auth": [
+        "libs/auth/src"
+      ],
+      "@bike/auth/*": [
+        "libs/auth/src/*"
+      ]
+    }
+  }
+}
